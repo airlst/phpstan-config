@@ -1,0 +1,53 @@
+{
+    "name": "airlst/phpstan-config",
+    "description": "PHPStan config for AirLST projects",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "airlst",
+        "phpstan",
+        "phpstan-config"
+    ],
+    "authors": [
+        {
+            "name": "Orkhan Ahmadov",
+            "email": "hey@orkhan.dev",
+            "role": "Developer"
+        }
+    ],
+    "homepage": "https://github.com/airlst/phpstan-config",
+    "require": {
+        "php": "^8.2",
+        "phpstan/phpstan": "^1.10",
+        "phpstan/phpstan-deprecation-rules": "^1.1",
+        "phpstan/phpstan-strict-rules": "^1.5",
+        "spaze/phpstan-disallowed-calls": "^3.1"
+    },
+    "require-dev": {
+        "airlst/php-cs-fixer-config": "^1.1.1",
+        "airlst/rector-config": "^1.0.2",
+        "ergebnis/composer-normalize": "^2.42"
+    },
+    "autoload": {
+        "psr-4": {
+            "Airlst\\PhpstanConfig\\": "src"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true
+        },
+        "sort-packages": true
+    },
+    "scripts": {
+        "cs-fixer": [
+            "./vendor/bin/php-cs-fixer fix --verbose --config=.php-cs-fixer.php"
+        ],
+        "phpstan": [
+            "./vendor/bin/phpstan analyse -c phpstan.php"
+        ],
+        "rector": [
+            "./vendor/bin/rector"
+        ]
+    }
+}
