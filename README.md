@@ -46,10 +46,11 @@ The constructor of the `Factory` class takes an array of paths to be scanned for
 You can use following configuration options on the `Factory` class by chaining them before `create()` call:
 
 - `level(int $level)`: Set the level of PHPStan
-- `with(string $file)`: Include additional PHPStan neon file
-- `without(string $file)`: Exclude provided PHPStan neon file
+- `include(string $file)`: Include additional PHPStan neon file
+- `exclude(string $file)`: Exclude provided PHPStan neon file
 - `withBleedingEdge()`: Use [bleeding edge version](https://phpstan.org/blog/what-is-bleeding-edge) of PHPStan
 - `useCacheDir(string $cacheDir)`: Use cache directory for PHPStan
+- `addRule(string $file)`: Add additional rule to PHPStan
 - `ignoreError(string $message, ?string $path, ?int $count, ?bool $reportUnmatched)`: Ignore provided error message
 - `checkMissingIterableValueType(bool $enable = true)`: Enables/Disables `checkMissingIterableValueType` rule
 - `checkGenericClassInNonGenericObjectType(bool $enable = true)`: Enables/Disables `checkGenericClassInNonGenericObjectType` rule

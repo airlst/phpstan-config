@@ -22,6 +22,8 @@ class Factory
         'editorUrlTitle' => '%%relFile%%:%%line%%',
         'ignoreErrors' => [],
     ];
+    /** @var array<string> */
+    private array $rules = [];
 
     /** @param array<string> $paths */
     public function __construct(array $paths)
@@ -36,14 +38,14 @@ class Factory
         return $this;
     }
 
-    public function with(string $file): self
+    public function include(string $file): self
     {
         $this->includes[] = $file;
 
         return $this;
     }
 
-    public function without(string $file): self
+    public function exclude(string $file): self
     {
         $key = array_search($file, $this->includes, true);
 
@@ -56,12 +58,19 @@ class Factory
 
     public function withBleedingEdge(): self
     {
-        return $this->with('phar://phpstan.phar/conf/bleedingEdge.neon');
+        return $this->include('phar://phpstan.phar/conf/bleedingEdge.neon');
     }
 
     public function useCacheDir(string $cacheDir): self
     {
         $this->parameters['tmpDir'] = $cacheDir;
+
+        return $this;
+    }
+
+    public function addRule(string $file): self
+    {
+        $this->rules[] = $file;
 
         return $this;
     }
@@ -114,6 +123,7 @@ class Factory
         return [
             'includes' => $this->includes,
             'parameters' => $this->parameters,
+            'rules' => $this->rules,
         ];
     }
 }
