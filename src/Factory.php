@@ -10,9 +10,6 @@ class Factory
 {
     /** @var array<string> */
     private array $includes = [
-        'vendor/phpstan/phpstan-deprecation-rules/rules.neon',
-        'vendor/phpstan/phpstan-strict-rules/rules.neon',
-        'vendor/spaze/phpstan-disallowed-calls/extension.neon',
         'vendor/spaze/phpstan-disallowed-calls/disallowed-dangerous-calls.neon',
         'vendor/spaze/phpstan-disallowed-calls/disallowed-execution-calls.neon',
         'vendor/spaze/phpstan-disallowed-calls/disallowed-insecure-calls.neon',
