@@ -40,6 +40,11 @@
         },
         "sort-packages": true
     },
+    "extra": {
+        "phpstan": {
+            "includes": []
+        }
+    },
     "scripts": {
         "ci": [
             "@composer normalize",

@@ -10,7 +10,19 @@ PHPStan config for AirLST projects.
 You can install the package via Composer:
 
 ```bash
-composer require --dev airlst/phpstan-config
+composer require --dev airlst/phpstan-config phpstan/extension-installer
+```
+
+Make sure to allow the `phpstan/extension-installer` plugin to run in your `composer.json`:
+
+```json
+{
+    "config": {
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
+    }
+}
 ```
 
 ## Usage
