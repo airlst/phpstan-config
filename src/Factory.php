@@ -48,11 +48,12 @@ class Factory
 
     public function exclude(string $file): self
     {
-        $key = array_search($file, $this->includes, true);
+        $excluded = array_filter(
+            $this->includes,
+            fn (string $include): bool => $include !== $file
+        );
 
-        if ($key !== false) {
-            unset($this->includes[$key]);
-        }
+        $this->includes = array_values($excluded);
 
         return $this;
     }
