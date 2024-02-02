@@ -99,7 +99,7 @@ class Factory
             $error['reportUnmatched'] = $reportUnmatched;
         }
 
-        $this->parameters['ignoreErrors'][] = $error;
+        $this->parameters['ignoreErrors'][] = $error; // @phpstan-ignore-line
 
         return $this;
     }
