@@ -24,7 +24,7 @@
         "spaze/phpstan-disallowed-calls": "^3.1.1"
     },
     "require-dev": {
-        "airlst/php-cs-fixer-config": "^1.1.1",
+        "airlst/php-cs-fixer-config": "^1.2.0",
         "airlst/rector-config": "^1.0.2",
         "ergebnis/composer-normalize": "^2.42"
     },

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Airlst\RectorConfig\Phpstan;
+namespace Airlst\PhpstanConfig\Phpstan;
 
 use PhpParser\Node;
 use PhpParser\Node\Expr\FuncCall;

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Airlst\PhpstanConfig;
 
-use Airlst\RectorConfig\Phpstan\NoDumpRule;
+use Airlst\PhpstanConfig\Phpstan\NoDumpRule;
 
 use function is_null;
 
