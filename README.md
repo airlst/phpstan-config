@@ -10,7 +10,7 @@ PHPStan config for AirLST projects.
 You can install the package via Composer:
 
 ```bash
-composer require --dev airlst/phpstan-config phpstan/extension-installer
+composer require --dev airlst/phpstan-config
 ```
 
 Make sure to allow the `phpstan/extension-installer` plugin to run in your `composer.json`:
@@ -38,7 +38,6 @@ $factory = new Airlst\PhpstanConfig\Factory(['src']);
 
 return $factory
     ->level(8)
-    ->withBleedingEdge()
     ->create();
 ```
 
