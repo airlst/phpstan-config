@@ -1,7 +1,7 @@
 # PHPStan config for AirLST projects
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/airlst/rector-config.svg?style=flat-square)](https://packagist.org/packages/airlst/rector-config)
-[![Total Downloads](https://img.shields.io/packagist/dt/airlst/rector-config.svg?style=flat-square)](https://packagist.org/packages/airlst/rector-config)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/airlst/phpstan-config.svg?style=flat-square)](https://packagist.org/packages/airlst/phpstan-config)
+[![Total Downloads](https://img.shields.io/packagist/dt/airlst/phpstan-config.svg?style=flat-square)](https://packagist.org/packages/airlst/phpstan-config)
 
 PHPStan config for AirLST projects.
 
