@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Airlst\PhpstanConfig;
 
+use Airlst\RectorConfig\Phpstan\NoDumpRule;
+
 use function is_null;
 
 class Factory
@@ -24,7 +26,9 @@ class Factory
     ];
 
     /** @var array<string> */
-    private array $rules = [];
+    private array $rules = [
+        NoDumpRule::class,
+    ];
 
     /** @param array<string> $paths */
     public function __construct(array $paths)
