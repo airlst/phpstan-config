@@ -22,6 +22,7 @@ class Factory
         'editorUrlTitle' => '%%relFile%%:%%line%%',
         'ignoreErrors' => [],
     ];
+
     /** @var array<string> */
     private array $rules = [];
 
