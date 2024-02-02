@@ -36,7 +36,10 @@ declare(strict_types=1);
 
 $factory = new Airlst\PhpstanConfig\Factory(['src']);
 
-return $factory->level(8)->create();
+return $factory
+    ->level(8)
+    ->withBleedingEdge()
+    ->create();
 ```
 
 The constructor of the `Factory` class takes an array of paths to be scanned for PHP files and analyzed. You can pass any number of paths to it.
