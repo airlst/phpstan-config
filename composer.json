@@ -18,11 +18,10 @@
     "homepage": "https://github.com/airlst/phpstan-config",
     "require": {
         "php": "^8.2",
-        "phpstan/extension-installer": "^1.3",
-        "phpstan/phpstan": "^1.10",
-        "phpstan/phpstan-deprecation-rules": "^1.1",
-        "phpstan/phpstan-strict-rules": "^1.5",
-        "spaze/phpstan-disallowed-calls": "^3.1"
+        "phpstan/extension-installer": "^1.3.1",
+        "phpstan/phpstan": "^1.10.57",
+        "phpstan/phpstan-deprecation-rules": "^1.1.4",
+        "spaze/phpstan-disallowed-calls": "^3.1.1"
     },
     "require-dev": {
         "airlst/php-cs-fixer-config": "^1.1.1",
