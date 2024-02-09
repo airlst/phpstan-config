@@ -25,7 +25,7 @@
     },
     "require-dev": {
         "airlst/php-cs-fixer-config": "^1.2.0",
-        "airlst/rector-config": "^1.0.2",
+        "airlst/rector-config": "^2.0.0",
         "ergebnis/composer-normalize": "^2.42"
     },
     "autoload": {
