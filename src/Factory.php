@@ -62,6 +62,26 @@ class Factory
         return $this;
     }
 
+    public function allowDangerousCalls(): self
+    {
+        return $this->exclude('vendor/spaze/phpstan-disallowed-calls/disallowed-dangerous-calls.neon');
+    }
+
+    public function allowExecutionCalls(): self
+    {
+        return $this->exclude('vendor/spaze/phpstan-disallowed-calls/disallowed-execution-calls.neon');
+    }
+
+    public function allowInsecureCalls(): self
+    {
+        return $this->exclude('vendor/spaze/phpstan-disallowed-calls/disallowed-insecure-calls.neon');
+    }
+
+    public function allowLooseCalls(): self
+    {
+        return $this->exclude('vendor/spaze/phpstan-disallowed-calls/disallowed-loose-calls.neon');
+    }
+
     public function withBleedingEdge(): self
     {
         return $this->include('phar://phpstan.phar/conf/bleedingEdge.neon');
