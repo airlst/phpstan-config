@@ -20,6 +20,11 @@ class Factory
 
     /** @var array<string, mixed> */
     private array $parameters = [
+        'type_coverage' => [
+            'return_type' => 100,
+            'param_type' => 100,
+            'property_type' => 100,
+        ],
         'editorUrl' => 'phpstorm://open?file=%%file%%&line=%%line%%',
         'editorUrlTitle' => '%%relFile%%:%%line%%',
         'ignoreErrors' => [],
@@ -80,6 +85,17 @@ class Factory
     public function allowLooseCalls(): self
     {
         return $this->exclude('vendor/spaze/phpstan-disallowed-calls/disallowed-loose-calls.neon');
+    }
+
+    public function typeCoverage(int $returnType, int $paramType, int $propertyType): self
+    {
+        $this->parameters['type_coverage'] = [
+            'return_type' => $returnType,
+            'param_type' => $paramType,
+            'property_type' => $propertyType,
+        ];
+
+        return $this;
     }
 
     public function withBleedingEdge(): self
