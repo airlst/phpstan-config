@@ -2,6 +2,14 @@
 
 All notable changes to `phpstan-config` will be documented in this file
 
+## 1.3.0 - 2024-03-09
+
+Added type coverage.
+
+Enabled by default to have 100% coverage on parameters, properties and return types.
+
+The new `typeCoverage(int $returnType, int $paramType, int $propertyType)` method on `Factory` can be used to change the individual type coverage percentage.
+
 ## 1.2.3 - 2024-03-07
 
 - Updated `phpstan/phpstan` to version 1.10.60
