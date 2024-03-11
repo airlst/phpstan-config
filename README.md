@@ -52,6 +52,7 @@ You can use following configuration options on the `Factory` class by chaining t
 - `exclude(string $file)`: Exclude provided PHPStan neon file
 - `withBleedingEdge()`: Use [bleeding edge version](https://phpstan.org/blog/what-is-bleeding-edge) of PHPStan
 - `useCacheDir(string $cacheDir)`: Use cache directory for PHPStan
+- `typeCoverage(int $returnType, int $paramType, int $propertyType)`: Set type coverage percentage, default is 100% for all
 - `addRule(string $file)`: Add additional rule to PHPStan
 - `ignoreError(string $message, ?string $path, ?int $count, ?bool $reportUnmatched)`: Ignore provided error message
 - `checkMissingIterableValueType(bool $enable = true)`: Enables/Disables `checkMissingIterableValueType` rule
