@@ -2,6 +2,10 @@
 
 All notable changes to `phpstan-config` will be documented in this file
 
+## 1.3.5 - 2024-03-22
+
+- Updated `phpstan/phpstan` to version 1.10.64
+
 ## 1.3.4 - 2024-03-19
 
 - Updated `phpstan/phpstan` to version 1.10.63
