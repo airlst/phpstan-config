@@ -174,6 +174,13 @@ class Factory
         return $this;
     }
 
+    public function reportMaybesInMethodSignatures(bool $enable = true): self
+    {
+        $this->parameters['reportMaybesInMethodSignatures'] = $enable;
+
+        return $this;
+    }
+
     public function strictRules(
         bool $disallowedLooseComparison = true,
         bool $requireParentConstructorCall = true,
