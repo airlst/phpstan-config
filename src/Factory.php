@@ -25,6 +25,21 @@ class Factory
             'param_type' => 100,
             'property_type' => 100,
         ],
+        'strictRules' => [
+            'allRules' => false,
+            'disallowedLooseComparison' => true,
+            'requireParentConstructorCall' => true,
+            'overwriteVariablesWithLoop' => true,
+            'closureUsesThis' => true,
+            'matchingInheritedMethodNames' => true,
+            'numericOperandsInArithmeticOperators' => true,
+            'switchConditionsMatchingType' => true,
+            'noVariableVariables' => true,
+            'disallowedConstructs' => true,
+            'booleansInConditions' => true,
+            'uselessCast' => true,
+            'strictCalls' => false,
+        ],
         'editorUrl' => 'phpstorm://open?file=%%file%%&line=%%line%%',
         'editorUrlTitle' => '%%relFile%%:%%line%%',
         'ignoreErrors' => [],
@@ -155,6 +170,38 @@ class Factory
     public function checkGenericClassInNonGenericObjectType(bool $enable = true): self
     {
         $this->parameters['checkGenericClassInNonGenericObjectType'] = $enable;
+
+        return $this;
+    }
+
+    public function strictRules(
+        bool $disallowedLooseComparison = true,
+        bool $requireParentConstructorCall = true,
+        bool $overwriteVariablesWithLoop = true,
+        bool $closureUsesThis = true,
+        bool $matchingInheritedMethodNames = true,
+        bool $numericOperandsInArithmeticOperators = true,
+        bool $switchConditionsMatchingType = true,
+        bool $noVariableVariables = true,
+        bool $disallowedConstructs = true,
+        bool $booleansInConditions = true,
+        bool $uselessCast = true,
+        bool $strictCalls = false
+    ): self {
+        $this->parameters['strictRules'] = [
+            'disallowedLooseComparison' => $disallowedLooseComparison,
+            'requireParentConstructorCall' => $requireParentConstructorCall,
+            'overwriteVariablesWithLoop' => $overwriteVariablesWithLoop,
+            'closureUsesThis' => $closureUsesThis,
+            'matchingInheritedMethodNames' => $matchingInheritedMethodNames,
+            'numericOperandsInArithmeticOperators' => $numericOperandsInArithmeticOperators,
+            'switchConditionsMatchingType' => $switchConditionsMatchingType,
+            'noVariableVariables' => $noVariableVariables,
+            'disallowedConstructs' => $disallowedConstructs,
+            'booleansInConditions' => $booleansInConditions,
+            'uselessCast' => $uselessCast,
+            'strictCalls' => $strictCalls,
+        ];
 
         return $this;
     }

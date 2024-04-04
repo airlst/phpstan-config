@@ -57,6 +57,7 @@ You can use following configuration options on the `Factory` class by chaining t
 - `ignoreError(string $message, ?string $path, ?int $count, ?bool $reportUnmatched)`: Ignore provided error message
 - `checkMissingIterableValueType(bool $enable = true)`: Enables/Disables `checkMissingIterableValueType` rule
 - `checkGenericClassInNonGenericObjectType(bool $enable = true)`: Enables/Disables `checkGenericClassInNonGenericObjectType` rule
+- `strictRules()`: Enables/disables strict rules. For available method arguments you can check [`phpstan/phpstan-strict-rules` documentation](https://github.com/phpstan/phpstan-strict-rules?tab=readme-ov-file#disabling-rules)
 
 ### Running PHPStan
 
