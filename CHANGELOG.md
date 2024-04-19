@@ -2,6 +2,13 @@
 
 All notable changes to `phpstan-config` will be documented in this file
 
+## 2.1.0 - 2024-04-19
+
+- Updated `phpstan/phpstan-strict-rules` to version 1.5.5
+- Version lock `phpstan/phpstan-strict-rules`
+- Version lock `phpstan/phpstan-deprecation-rules`
+- Version lock `spaze/phpstan-disallowed-calls`
+
 ## 2.0.2 - 2024-04-17
 
 - Updated `tomasvotruba/type-coverage` to version 0.2.7
