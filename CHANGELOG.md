@@ -2,6 +2,11 @@
 
 All notable changes to `phpstan-config` will be documented in this file
 
+## 3.0.0 - 2024-04-22
+
+- Using `tomasvotruba/unused-public`
+- Updated `phpstan/phpstan-strict-rules` to version 3.2.0
+
 ## 2.1.0 - 2024-04-19
 
 - Updated `phpstan/phpstan-strict-rules` to version 1.5.5

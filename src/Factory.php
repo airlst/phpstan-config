@@ -20,6 +20,13 @@ class Factory
 
     /** @var array<string, mixed> */
     private array $parameters = [
+        'unused_public' => [
+            'methods' => true,
+            'properties' => true,
+            'constants' => true,
+            'local_methods' => true,
+            'template_paths' => [],
+        ],
         'type_coverage' => [
             'return_type' => 100,
             'param_type' => 100,
@@ -108,6 +115,25 @@ class Factory
             'return_type' => $returnType,
             'param_type' => $paramType,
             'property_type' => $propertyType,
+        ];
+
+        return $this;
+    }
+
+    /** @param  array<int, string>  $templatePaths */
+    public function unusedPublic(
+        bool|int $methods = true,
+        bool|int $properties = true,
+        bool|int $constants = true,
+        bool|int $localMethods = true,
+        array $templatePaths = []
+    ): self {
+        $this->parameters['unused_public'] = [
+            'methods' => $methods,
+            'properties' => $properties,
+            'constants' => $constants,
+            'local_methods' => $localMethods,
+            'template_paths' => $templatePaths,
         ];
 
         return $this;
