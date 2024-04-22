@@ -4,7 +4,7 @@ All notable changes to `phpstan-config` will be documented in this file
 
 ## 2.2.0 - 2024-04-22
 
-- Updated `phpstan/phpstan-strict-rules` to version 3.2.0
+- Updated `spaze/phpstan-disallowed-calls` to version 3.2.0
 
 ## 2.1.0 - 2024-04-19
 
