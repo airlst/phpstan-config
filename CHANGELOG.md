@@ -2,6 +2,10 @@
 
 All notable changes to `phpstan-config` will be documented in this file
 
+## 2.3.0 - 2024-05-06
+
+- Updated `spaze/phpstan-disallowed-calls` to version 3.3.0
+
 ## 2.2.1 - 2024-04-30
 
 - Updated `tomasvotruba/type-coverage` to version 0.2.8
