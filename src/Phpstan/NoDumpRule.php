@@ -25,13 +25,17 @@ class NoDumpRule implements Rule // @phpstan-ignore-line
 
         if ($node->name->parts[0] === 'dd') { // @phpstan-ignore-line
             return [
-                RuleErrorBuilder::message('Remaining dd() call in application code')->build(),
+                RuleErrorBuilder::message('Remaining dd() call in application code')
+                    ->identifier('dump.dd')
+                    ->build(),
             ];
         }
 
         if ($node->name->parts[0] === 'dump') { // @phpstan-ignore-line
             return [
-                RuleErrorBuilder::message('Remaining dump() call in application code')->build(),
+                RuleErrorBuilder::message('Remaining dump() call in application code')
+                    ->identifier('dump.dump')
+                    ->build(),
             ];
         }
 

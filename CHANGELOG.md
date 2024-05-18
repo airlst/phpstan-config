@@ -2,6 +2,13 @@
 
 All notable changes to `phpstan-config` will be documented in this file
 
+## 3.0.0 - 2024-05-18
+
+- Updated `phpstan/phpstan` to version 1.11
+- Updated `phpstan/phpstan-deprecation-rules` to version 1.2.0
+- Updated `phpstan/phpstan-strict-rules` to version 1.6.0
+- Updated `spaze/phpstan-disallowed-calls` to version 3.4.0
+
 ## 2.3.0 - 2024-05-06
 
 - Updated `spaze/phpstan-disallowed-calls` to version 3.3.0
