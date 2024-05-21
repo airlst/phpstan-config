@@ -2,6 +2,10 @@
 
 All notable changes to `phpstan-config` will be documented in this file
 
+## 3.1.0 - 2024-05-21
+
+- Updated `tomasvotruba/type-coverage` to version 0.3.0
+
 ## 3.0.0 - 2024-05-18
 
 - Updated `phpstan/phpstan` to version 1.11
