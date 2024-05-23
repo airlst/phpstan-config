@@ -25,7 +25,7 @@ class NoThrowIfRule implements Rule // @phpstan-ignore-line
 
         if ($node->name->parts[0] === 'throw_if') { // @phpstan-ignore-line
             return [
-                RuleErrorBuilder::message('throw_if() call in application code')
+                RuleErrorBuilder::message('throw_if() function is not allowed! Use if condition instead.')
                     ->identifier('throwIf.if')
                     ->build(),
             ];
@@ -33,7 +33,7 @@ class NoThrowIfRule implements Rule // @phpstan-ignore-line
 
         if ($node->name->parts[0] === 'throw_unless') { // @phpstan-ignore-line
             return [
-                RuleErrorBuilder::message('throw_unless() call in application code')
+                RuleErrorBuilder::message('throw_unless() function is not allowed! Use if condition instead.')
                     ->identifier('throwIf.unless')
                     ->build(),
             ];

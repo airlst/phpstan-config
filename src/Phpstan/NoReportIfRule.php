@@ -25,7 +25,7 @@ class NoReportIfRule implements Rule // @phpstan-ignore-line
 
         if ($node->name->parts[0] === 'report_if') { // @phpstan-ignore-line
             return [
-                RuleErrorBuilder::message('report_if() call in application code')
+                RuleErrorBuilder::message('report_if() function is not allowed! Use if condition instead.')
                     ->identifier('reportIf.if')
                     ->build(),
             ];
@@ -33,7 +33,7 @@ class NoReportIfRule implements Rule // @phpstan-ignore-line
 
         if ($node->name->parts[0] === 'report_unless') { // @phpstan-ignore-line
             return [
-                RuleErrorBuilder::message('report_unless() call in application code')
+                RuleErrorBuilder::message('report_unless() function is not allowed! Use if condition instead.')
                     ->identifier('reportIf.unless')
                     ->build(),
             ];
