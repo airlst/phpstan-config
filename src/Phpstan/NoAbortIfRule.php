@@ -26,7 +26,7 @@ class NoAbortIfRule implements Rule // @phpstan-ignore-line
         if ($node->name->parts[0] === 'abort_if') { // @phpstan-ignore-line
             return [
                 RuleErrorBuilder::message('abort_if() call in application code')
-                    ->identifier('abort_if.if')
+                    ->identifier('abortIf.if')
                     ->build(),
             ];
         }
@@ -34,7 +34,7 @@ class NoAbortIfRule implements Rule // @phpstan-ignore-line
         if ($node->name->parts[0] === 'abort_unless') { // @phpstan-ignore-line
             return [
                 RuleErrorBuilder::message('abort_unless() call in application code')
-                    ->identifier('abort_if.unless')
+                    ->identifier('abortIf.unless')
                     ->build(),
             ];
         }
