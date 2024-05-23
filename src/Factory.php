@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Airlst\PhpstanConfig;
 
 use Airlst\PhpstanConfig\Phpstan\NoAbortIfRule;
+use Airlst\PhpstanConfig\Phpstan\NoBlankRule;
 use Airlst\PhpstanConfig\Phpstan\NoDumpRule;
-
 use Airlst\PhpstanConfig\Phpstan\NoReportIfRule;
 use Airlst\PhpstanConfig\Phpstan\NoThrowIfRule;
 
@@ -55,6 +55,7 @@ class Factory
         NoAbortIfRule::class,
         NoThrowIfRule::class,
         NoReportIfRule::class,
+        NoBlankRule::class,
     ];
 
     /** @param array<string> $paths */
