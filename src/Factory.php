@@ -4,7 +4,11 @@ declare(strict_types=1);
 
 namespace Airlst\PhpstanConfig;
 
+use Airlst\PhpstanConfig\Phpstan\NoAbortIfRule;
 use Airlst\PhpstanConfig\Phpstan\NoDumpRule;
+
+use Airlst\PhpstanConfig\Phpstan\NoReportIfRule;
+use Airlst\PhpstanConfig\Phpstan\NoThrowIfRule;
 
 use function is_null;
 
@@ -48,6 +52,9 @@ class Factory
     /** @var array<string> */
     private array $rules = [
         NoDumpRule::class,
+        NoAbortIfRule::class,
+        NoThrowIfRule::class,
+        NoReportIfRule::class,
     ];
 
     /** @param array<string> $paths */

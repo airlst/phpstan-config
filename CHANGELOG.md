@@ -2,6 +2,12 @@
 
 All notable changes to `phpstan-config` will be documented in this file
 
+## 4.0.0 - 2024-05-22
+
+- Include `NoAbortIfRule` as additional rule
+- Include `NoThrowIfRule` as additional rule
+- Include `NoReportIfRule` as additional rule
+
 ## 3.1.0 - 2024-05-21
 
 - Updated `tomasvotruba/type-coverage` to version 0.3.0
