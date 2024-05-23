@@ -2,12 +2,15 @@
 
 All notable changes to `phpstan-config` will be documented in this file
 
+## 4.1.0 - 2024-05-23
+
+- Include `NoBlankRule` as additional rule
+
 ## 4.0.0 - 2024-05-22
 
 - Include `NoAbortIfRule` as additional rule
 - Include `NoThrowIfRule` as additional rule
 - Include `NoReportIfRule` as additional rule
-- Include `NoBlankRule` as additional rule
 
 ## 3.1.0 - 2024-05-21
 
