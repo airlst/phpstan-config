@@ -37,7 +37,7 @@ class DisallowedLaravelHelperMethodsRule implements Rule // @phpstan-ignore-line
             return [];
         }
 
-        $functionName = $node->name->getParts()[0]; // @phpstan-ignore-line
+        $functionName = $node->name->parts[0]; // @phpstan-ignore-line
 
         if (! in_array($functionName, self::DISALLOWED_METHODS, true)) {
             return [];
