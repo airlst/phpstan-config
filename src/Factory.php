@@ -4,11 +4,7 @@ declare(strict_types=1);
 
 namespace Airlst\PhpstanConfig;
 
-use Airlst\PhpstanConfig\Phpstan\NoAbortIfRule;
-use Airlst\PhpstanConfig\Phpstan\NoBlankRule;
-use Airlst\PhpstanConfig\Phpstan\NoDumpRule;
-use Airlst\PhpstanConfig\Phpstan\NoReportIfRule;
-use Airlst\PhpstanConfig\Phpstan\NoThrowIfRule;
+use Airlst\PhpstanConfig\Phpstan\DisallowedLaravelHelperMethodsRule;
 
 use function is_null;
 
@@ -51,11 +47,7 @@ class Factory
 
     /** @var array<string> */
     private array $rules = [
-        NoDumpRule::class,
-        NoAbortIfRule::class,
-        NoThrowIfRule::class,
-        NoReportIfRule::class,
-        NoBlankRule::class,
+        DisallowedLaravelHelperMethodsRule::class,
     ];
 
     /** @param array<string> $paths */

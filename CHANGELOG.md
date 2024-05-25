@@ -2,6 +2,11 @@
 
 All notable changes to `phpstan-config` will be documented in this file
 
+## 4.2.0 - 2024-05-25
+
+- Updated `phpstan/phpstan` to version 1.11.2
+- Combine disallowed Laravel helper methods into `DisallowedLaravelHelperMethodsRule`
+
 ## 4.1.0 - 2024-05-23
 
 - Include `NoBlankRule` as additional rule
