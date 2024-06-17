@@ -102,12 +102,13 @@ class Factory
         return $this->exclude('vendor/spaze/phpstan-disallowed-calls/disallowed-loose-calls.neon');
     }
 
-    public function typeCoverage(int $returnType, int $paramType, int $propertyType): self
+    public function typeCoverage(int $return, int $param, int $property, int $constant): self
     {
         $this->parameters['type_coverage'] = [
-            'return_type' => $returnType,
-            'param_type' => $paramType,
-            'property_type' => $propertyType,
+            'return' => $return,
+            'param' => $param,
+            'property' => $property,
+            'constant' => $constant,
         ];
 
         return $this;

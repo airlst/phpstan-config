@@ -2,6 +2,12 @@
 
 All notable changes to `phpstan-config` will be documented in this file
 
+## 5.0.0 - 2024-06-17
+
+- Dropped PHP 8.2 support
+- Updated `phpstan/phpstan` to version 1.11.4
+- Updated `tomasvotruba/type-coverage` to version 0.3.1
+
 ## 4.2.1 - 2024-05-31
 
 - Updated `phpstan/phpstan` to version 1.11.3

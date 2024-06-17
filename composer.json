@@ -17,18 +17,18 @@
     ],
     "homepage": "https://github.com/airlst/phpstan-config",
     "require": {
-        "php": "^8.2",
-        "phpstan/extension-installer": "^1.3.1",
-        "phpstan/phpstan": "1.11.3",
+        "php": "^8.3",
+        "phpstan/extension-installer": "^1.4.1",
+        "phpstan/phpstan": "1.11.4",
         "phpstan/phpstan-deprecation-rules": "1.2.0",
         "phpstan/phpstan-strict-rules": "1.6.0",
         "spaze/phpstan-disallowed-calls": "3.4.0",
-        "tomasvotruba/type-coverage": "0.3.0"
+        "tomasvotruba/type-coverage": "0.3.1"
     },
     "require-dev": {
         "airlst/php-cs-fixer-config": "^2.1.1",
         "airlst/rector-config": "^4.1.0",
-        "ergebnis/composer-normalize": "^2.42.0"
+        "ergebnis/composer-normalize": "^2.43.0"
     },
     "autoload": {
         "psr-4": {

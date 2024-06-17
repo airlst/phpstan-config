@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Airlst\PhpstanConfig\Phpstan;
 
+use Override;
 use PhpParser\Node;
 use PhpParser\Node\Expr\FuncCall;
 use PHPStan\Analyser\Scope;
@@ -14,7 +15,7 @@ use function in_array;
 
 class DisallowedLaravelHelperMethodsRule implements Rule // @phpstan-ignore-line
 {
-    private const DISALLOWED_METHODS = [
+    private const array DISALLOWED_METHODS = [
         'dd',
         'dump',
         'blank',
@@ -26,11 +27,13 @@ class DisallowedLaravelHelperMethodsRule implements Rule // @phpstan-ignore-line
         'report_unless',
     ];
 
+    #[Override]
     public function getNodeType(): string
     {
         return FuncCall::class;
     }
 
+    #[Override]
     public function processNode(Node $node, Scope $scope): array
     {
         if (! $node instanceof FuncCall) {
