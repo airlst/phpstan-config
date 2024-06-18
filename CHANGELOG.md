@@ -2,6 +2,11 @@
 
 All notable changes to `phpstan-config` will be documented in this file
 
+## 6.0.0 - 2024-06-18
+
+- Uses `rector/type-perfect` by default
+- Updated `phpstan/phpstan` to version 1.11.5
+
 ## 5.0.0 - 2024-06-17
 
 - Dropped PHP 8.2 support

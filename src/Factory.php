@@ -25,6 +25,11 @@ class Factory
             'param_type' => 100,
             'property_type' => 100,
         ],
+        'type_perfect' => [
+            'null_over_false' => true,
+            'no_mixed' => true,
+            'narrow_param' => true,
+        ],
         'strictRules' => [
             'allRules' => false,
             'disallowedLooseComparison' => true,
@@ -109,6 +114,17 @@ class Factory
             'param' => $param,
             'property' => $property,
             'constant' => $constant,
+        ];
+
+        return $this;
+    }
+
+    public function typePerfect(bool $nullOverFalse, bool $noMixed, bool $narrowParam): self
+    {
+        $this->parameters['type_perfect'] = [
+            'null_over_false' => $nullOverFalse,
+            'no_mixed' => $noMixed,
+            'narrow_param' => $narrowParam,
         ];
 
         return $this;
