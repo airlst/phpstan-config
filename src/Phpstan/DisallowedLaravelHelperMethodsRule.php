@@ -19,12 +19,14 @@ class DisallowedLaravelHelperMethodsRule implements Rule // @phpstan-ignore-line
         'dd',
         'dump',
         'blank',
+        'filled',
         'abort_if',
         'abort_unless',
         'throw_if',
         'throw_unless',
         'report_if',
         'report_unless',
+        'now',
     ];
 
     #[Override]

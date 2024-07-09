@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Airlst\PhpstanConfig;
 
 use Airlst\PhpstanConfig\Phpstan\DisallowedLaravelHelperMethodsRule;
+use Airlst\PhpstanConfig\Phpstan\DisallowMutableDatetimeRule;
 
 use function is_null;
 
@@ -54,6 +55,7 @@ class Factory
     /** @var array<string> */
     private array $rules = [
         DisallowedLaravelHelperMethodsRule::class,
+        DisallowMutableDatetimeRule::class,
     ];
 
     /** @param array<string> $paths */
