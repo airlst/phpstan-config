@@ -2,6 +2,11 @@
 
 All notable changes to `phpstan-config` will be documented in this file
 
+## 6.1.0 - 2024-07-09
+
+- Updated `rector/type-perfect` to version 0.1.8
+- Updated `phpstan/phpstan` to version 1.11.7
+
 ## 6.0.0 - 2024-06-18
 
 - Uses `rector/type-perfect` by default
