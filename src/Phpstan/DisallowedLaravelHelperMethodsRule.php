@@ -27,6 +27,7 @@ class DisallowedLaravelHelperMethodsRule implements Rule // @phpstan-ignore-line
         'report_if',
         'report_unless',
         'now',
+        'today',
     ];
 
     #[Override]
