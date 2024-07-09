@@ -4,7 +4,7 @@ All notable changes to `phpstan-config` will be documented in this file
 
 ## 7.0.0 - 2024-07-09
 
-- New `disallowedLaravelFunctions` rule that disallows using mutable DateTime instances/functions
+- New `mutableDatetime` rule that disallows using mutable DateTime instances/functions
 
 ## 6.1.0 - 2024-07-09
 

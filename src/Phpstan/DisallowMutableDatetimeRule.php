@@ -38,7 +38,7 @@ class DisallowMutableDatetimeRule implements Rule // @phpstan-ignore-line
             if (in_array($className, self::DISALLOWED_CLASSES, true)) {
                 $errors[] = RuleErrorBuilder::message(
                     sprintf('Instantiation of class %s is disallowed. Use immutable DateTime instead.', $className)
-                )->identifier('disallowMutableDatetime')->build();
+                )->identifier('mutableDatetime')->build();
             }
         }
 
