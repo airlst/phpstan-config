@@ -2,6 +2,12 @@
 
 All notable changes to `phpstan-config` will be documented in this file
 
+## 8.0.0 - 2024-08-05
+
+- Added `DisallowedLaravelDieDumpFunctionsRule`
+- Dropped `DisallowedLaravelHelperMethodsRule`
+- Updated `phpstan/phpstan` to version 1.11.9
+
 ## 7.0.0 - 2024-07-09
 
 - New `mutableDatetime` rule that disallows using mutable DateTime instances/functions

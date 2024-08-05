@@ -13,21 +13,11 @@ use PHPStan\Rules\RuleErrorBuilder;
 
 use function in_array;
 
-class DisallowedLaravelHelperMethodsRule implements Rule // @phpstan-ignore-line
+class DisallowedLaravelDieDumpFunctionsRule implements Rule // @phpstan-ignore-line
 {
     private const array DISALLOWED_METHODS = [
         'dd',
         'dump',
-        'blank',
-        'filled',
-        'abort_if',
-        'abort_unless',
-        'throw_if',
-        'throw_unless',
-        'report_if',
-        'report_unless',
-        'now',
-        'today',
     ];
 
     #[Override]
@@ -51,7 +41,7 @@ class DisallowedLaravelHelperMethodsRule implements Rule // @phpstan-ignore-line
 
         return [
             RuleErrorBuilder::message("Disallowed `{$functionName}` function usage!")
-                ->identifier('disallowedLaravelFunctions.' . lcfirst(str_replace('_', '', ucwords($functionName, '_'))))
+                ->identifier("disallowedLaravelFunctions.{$functionName}")
                 ->build(),
         ];
     }

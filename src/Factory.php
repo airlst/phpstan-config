@@ -4,10 +4,11 @@ declare(strict_types=1);
 
 namespace Airlst\PhpstanConfig;
 
-use Airlst\PhpstanConfig\Phpstan\DisallowedLaravelHelperMethodsRule;
+use Airlst\PhpstanConfig\Phpstan\DisallowedLaravelDieDumpFunctionsRule;
 use Airlst\PhpstanConfig\Phpstan\DisallowMutableDatetimeRule;
 
 use function is_null;
+use function sprintf;
 
 class Factory
 {
@@ -54,7 +55,7 @@ class Factory
 
     /** @var array<string> */
     private array $rules = [
-        DisallowedLaravelHelperMethodsRule::class,
+        DisallowedLaravelDieDumpFunctionsRule::class,
         DisallowMutableDatetimeRule::class,
     ];
 

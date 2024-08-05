@@ -12,6 +12,7 @@ use PHPStan\Rules\Rule;
 use PHPStan\Rules\RuleErrorBuilder;
 
 use function in_array;
+use function sprintf;
 
 class DisallowMutableDatetimeRule implements Rule // @phpstan-ignore-line
 {
