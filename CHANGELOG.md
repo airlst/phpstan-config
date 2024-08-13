@@ -2,6 +2,10 @@
 
 All notable changes to `phpstan-config` will be documented in this file
 
+## 8.0.1 - 2024-08-13
+
+- Updated `phpstan/phpstan` to version 1.11.10
+
 ## 8.0.0 - 2024-08-05
 
 - Added `DisallowedLaravelDieDumpFunctionsRule`
