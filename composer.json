@@ -18,8 +18,8 @@
     "homepage": "https://github.com/airlst/phpstan-config",
     "require": {
         "php": "^8.3",
-        "phpstan/extension-installer": "^1.4.1",
-        "phpstan/phpstan": "1.11.10",
+        "phpstan/extension-installer": "^1.4.2",
+        "phpstan/phpstan": "1.12.0",
         "phpstan/phpstan-deprecation-rules": "1.2.0",
         "phpstan/phpstan-strict-rules": "1.6.0",
         "rector/type-perfect": "0.1.8",
