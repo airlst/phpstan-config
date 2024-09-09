@@ -53,7 +53,7 @@ You can use following configuration options on the `Factory` class by chaining t
 - `withBleedingEdge()`: Use [bleeding edge version](https://phpstan.org/blog/what-is-bleeding-edge) of PHPStan
 - `useCacheDir(string $cacheDir)`: Use cache directory for PHPStan
 - `typeCoverage(int $return, int $param, int $property, int $constant)`: Set type coverage percentage, default is 100% for all
-- `typePerfect(bool $nullOverFalse, bool $noMixed, bool $narrowParam)`: Set type perfect configuration, by default all turned on. See [rectorphp/type-perfect](https://github.com/rectorphp/type-perfect?tab=readme-ov-file#configure) README for more details.
+- `typePerfect(bool $nullOverFalse, bool $noMixedProperty, bool $noMixedCaller, bool $narrowParam, bool $narrowReturn)`: Set type perfect configuration, by default all turned on. See [rectorphp/type-perfect](https://github.com/rectorphp/type-perfect?tab=readme-ov-file#configure) README for more details.
 - `addRule(string $file)`: Add additional rule to PHPStan
 - `ignoreError(string $message, ?string $path, ?int $count, ?bool $reportUnmatched)`: Ignore provided error message
 - `checkMissingIterableValueType(bool $enable = true)`: Enables/Disables `checkMissingIterableValueType` rule

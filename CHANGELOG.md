@@ -2,6 +2,15 @@
 
 All notable changes to `phpstan-config` will be documented in this file
 
+## 9.0.0 - 2024-09-09
+
+- Updated `rector/type-perfect` to version 0.2.0
+- Updated `phpstan/phpstan` to version 1.12.3
+
+Breaking change:
+
+- `$noMixed` argument on `typePerfect` method replaced with `$noMixedProperty` and `$noMixedCaller`.
+
 ## 8.1.1 - 2024-09-06
 
 - Updated `phpstan/phpstan` to version 1.12.2

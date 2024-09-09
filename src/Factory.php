@@ -29,7 +29,8 @@ class Factory
         ],
         'type_perfect' => [
             'null_over_false' => true,
-            'no_mixed' => true,
+            'no_mixed_property' => true,
+            'no_mixed_caller' => true,
             'narrow_param' => true,
             'narrow_return' => true,
         ],
@@ -123,11 +124,17 @@ class Factory
         return $this;
     }
 
-    public function typePerfect(bool $nullOverFalse, bool $noMixed, bool $narrowParam, bool $narrowReturn): self
-    {
+    public function typePerfect(
+        bool $nullOverFalse,
+        bool $noMixedProperty,
+        bool $noMixedCaller,
+        bool $narrowParam,
+        bool $narrowReturn
+    ): self {
         $this->parameters['type_perfect'] = [
             'null_over_false' => $nullOverFalse,
-            'no_mixed' => $noMixed,
+            'no_mixed_property' => $noMixedProperty,
+            'no_mixed_caller' => $noMixedCaller,
             'narrow_param' => $narrowParam,
             'narrow_return' => $narrowReturn,
         ];
