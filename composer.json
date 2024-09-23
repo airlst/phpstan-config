@@ -19,9 +19,9 @@
     "require": {
         "php": "^8.3",
         "phpstan/extension-installer": "^1.4.3",
-        "phpstan/phpstan": "1.12.3",
+        "phpstan/phpstan": "1.12.4",
         "phpstan/phpstan-deprecation-rules": "1.2.1",
-        "phpstan/phpstan-strict-rules": "1.6.0",
+        "phpstan/phpstan-strict-rules": "1.6.1",
         "rector/type-perfect": "0.2.0",
         "spaze/phpstan-disallowed-calls": "3.4.0",
         "tomasvotruba/type-coverage": "0.3.1"
