@@ -2,6 +2,11 @@
 
 All notable changes to `phpstan-config` will be documented in this file
 
+## 10.0.0 - 2024-10-04
+
+- Type coverage now also uses constants, defaults to 100%
+- Dependency update
+
 ## 9.0.3 - 2024-10-01
 
 - Updated `phpstan/phpstan` to version 1.12.5

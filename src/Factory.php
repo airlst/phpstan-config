@@ -23,9 +23,10 @@ class Factory
     /** @var array<string, mixed> */
     private array $parameters = [
         'type_coverage' => [
-            'return_type' => 100,
-            'param_type' => 100,
-            'property_type' => 100,
+            'return' => 100,
+            'param' => 100,
+            'property' => 100,
+            'constant' => 100,
         ],
         'type_perfect' => [
             'null_over_false' => true,
