@@ -2,6 +2,11 @@
 
 All notable changes to `phpstan-config` will be documented in this file
 
+## 10.0.1 - 2024-10-28
+
+- Updated `phpstan/phpstan` to version 1.12.7
+- Updated `spaze/phpstan-disallowed-calls` to version 3.5.1
+
 ## 10.0.0 - 2024-10-04
 
 - Type coverage now also uses constants, defaults to 100%
