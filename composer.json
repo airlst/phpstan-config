@@ -19,7 +19,7 @@
     "require": {
         "php": "^8.3",
         "phpstan/extension-installer": "^1.4.3",
-        "phpstan/phpstan": "1.12.7",
+        "phpstan/phpstan": "1.12.8",
         "phpstan/phpstan-deprecation-rules": "1.2.1",
         "phpstan/phpstan-strict-rules": "1.6.1",
         "rector/type-perfect": "1.0.0",
@@ -28,7 +28,7 @@
     },
     "require-dev": {
         "airlst/php-cs-fixer-config": "^2.6.0",
-        "airlst/rector-config": "^4.3.10",
+        "airlst/rector-config": "^4.3.11",
         "ergebnis/composer-normalize": "^2.44.0"
     },
     "autoload": {
