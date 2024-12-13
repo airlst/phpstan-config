@@ -182,7 +182,7 @@ class Factory
         }
 
         // Convert plain message to regex
-        if (! str_starts_with($message, '#')) {
+        if (! is_null($message) && ! str_starts_with($message, '#')) {
             $error['message'] = sprintf('#^%s$#', preg_quote($message, '#'));
         }
 
