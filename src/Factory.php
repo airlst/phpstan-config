@@ -56,6 +56,7 @@ class Factory
             'strictArrayFilter' => true,
             'illegalConstructorMethodCall' => true,
         ],
+        'treatPhpDocTypesAsCertain' => true,
         'editorUrl' => 'phpstorm://open?file=%%file%%&line=%%line%%',
         'editorUrlTitle' => '%%relFile%%:%%line%%',
         'ignoreErrors' => [],
@@ -164,6 +165,13 @@ class Factory
     public function addRule(string $file): self
     {
         $this->rules[] = $file;
+
+        return $this;
+    }
+
+    public function treatPhpDocTypesAsCertain(bool $value): self
+    {
+        $this->parameters['treatPhpDocTypesAsCertain'] = $value;
 
         return $this;
     }
