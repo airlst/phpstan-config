@@ -169,50 +169,33 @@ class Factory
     }
 
     public function ignoreError(
-        string $message,
+        ?string $identifier,
+        ?string $message,
         ?string $path = null,
         ?int $count = null,
         ?bool $reportUnmatched = null
     ): self {
-        // Convert plain message to regex
-        if (! str_starts_with($message, '#')) {
-            $message = sprintf('#^%s$#', preg_quote($message, '#'));
+        $error = [];
+
+        if (! is_null($identifier)) {
+            $error['identifier'] = $identifier;
         }
 
-        $error = ['message' => $message];
+        // Convert plain message to regex
+        if (! str_starts_with($message, '#')) {
+            $error['message'] = sprintf('#^%s$#', preg_quote($message, '#'));
+        }
 
         if (! is_null($path)) {
             $error['path'] = $path;
         }
+
         if (! is_null($count)) {
             $error['count'] = $count;
         }
-        if (! is_null($reportUnmatched)) {
-            $error['reportUnmatched'] = $reportUnmatched;
-        }
+        $error['reportUnmatched'] = $reportUnmatched ?? true;
 
         $this->parameters['ignoreErrors'][] = $error; // @phpstan-ignore-line
-
-        return $this;
-    }
-
-    public function checkMissingIterableValueType(bool $enable = true): self
-    {
-        $this->parameters['checkMissingIterableValueType'] = $enable;
-
-        return $this;
-    }
-
-    public function checkGenericClassInNonGenericObjectType(bool $enable = true): self
-    {
-        $this->parameters['checkGenericClassInNonGenericObjectType'] = $enable;
-
-        return $this;
-    }
-
-    public function reportMaybesInMethodSignatures(bool $enable = true): self
-    {
-        $this->parameters['reportMaybesInMethodSignatures'] = $enable;
 
         return $this;
     }
