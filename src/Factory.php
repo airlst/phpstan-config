@@ -169,8 +169,8 @@ class Factory
     }
 
     public function ignoreError(
-        ?string $identifier,
-        ?string $message,
+        ?string $identifier = null,
+        ?string $message = null,
         ?string $path = null,
         ?int $count = null,
         ?bool $reportUnmatched = null
