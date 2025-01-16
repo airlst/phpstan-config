@@ -2,7 +2,7 @@
 
 All notable changes to `phpstan-config` will be documented in this file
 
-## 11.0.0 - 2024-12-..
+## 11.0.0 - 2025-01-..
 
 - Updated `phpstan/phpstan` to version 2.0.3
 - Updated `phpstan/phpstan-deprecation-rules` to version 2.0.1
