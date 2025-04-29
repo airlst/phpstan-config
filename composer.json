@@ -19,8 +19,8 @@
     "require": {
         "php": "^8.3",
         "phpstan/extension-installer": "^1.4.3",
-        "phpstan/phpstan": "2.1.12",
-        "phpstan/phpstan-deprecation-rules": "2.0.1",
+        "phpstan/phpstan": "2.1.13",
+        "phpstan/phpstan-deprecation-rules": "2.0.2",
         "phpstan/phpstan-strict-rules": "2.0.4",
         "rector/type-perfect": "2.0.2",
         "spaze/phpstan-disallowed-calls": "4.5.0",
